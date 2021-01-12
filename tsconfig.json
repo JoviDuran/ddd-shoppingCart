@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "lib": ["ESNext"],
+
+    "incremental": true,
+    "outDir": "./build",
+    "rootDir": "./",
+
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+
+    "baseUrl": ".",
+    "typeRoots": ["@types", "node_modules/@types"],
+    "paths": {
+      "*": ["*", "@types/*"],
+      "@app/graphql-schema-types": ["@types/app-graphql-schema-types"],
+      "@app/config/*": ["./src/app/config/*"],
+      "@app/middleware": ["src/app/middleware"],
+      "@app/utils": ["src/utils"],
+      "@app/controllers": ["./src/app/controllers"],
+      "@app/infrastructure/models": ["./src/infrastructure/models"],
+      "@app/core/authorization": ["./src/app/core/authorization"],
+      "@app/core/services": ["./src/app/core/services"],
+      "@app/core/interfaces": ["./src/app/core/interfaces"],
+      "@app/core/types/*": ["./src/app/core/types/*"],
+      "@app/core/enums": ["./src/app//core/enums"],
+      "@app/core/factories/graphql": ["./src/app/core/factories/graphql"],
+      "@app/graphql-pubsub": ["./src/app/graphql-pubsub"],
+      "@app/graphql": ["./src/app/graphql"],
+      "@app/yup-schemas": ["./src/app/graphql-shield/yup-validation-schemas"],
+      "@app/error-handler/*": ["./src/app/core/error-handler/*"]
+    },
+
+    "esModuleInterop": true,
+    "importsNotUsedAsValues": "preserve",
+
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
+  },
+  "include": ["src/**/*.ts", "knexfile.ts"],
+  "exclude": ["node_modules", "build"]
+}

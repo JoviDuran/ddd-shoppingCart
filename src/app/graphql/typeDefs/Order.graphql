@@ -1,0 +1,28 @@
+type Order {
+    id: ID!
+    orderItems: [OrderItem!]!
+    customerName: String!
+    date: DateTime;
+    address: String;
+    email: String;
+}
+
+extend type Query {
+    order(id: ID!): Order
+}
+
+extend type Mutation{
+    placeOrder(input: PlaceOrderInput!): PlaceOrderPayload
+}
+
+input PlaceOrderInput {
+    orderItems:[OrderItem!]!
+    customerName: String!
+    address: String!
+    email: String!
+}
+
+type PlaceOrderPayload {
+    success: Boolean!
+    order: Order
+}

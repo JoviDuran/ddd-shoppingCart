@@ -1,0 +1,30 @@
+{
+  "cSpell.words": [
+    "casl",
+    "codegen",
+    "commitlint",
+    "copyfiles",
+    "dataloader",
+    "dataloaders",
+    "deserialize",
+    "dockerignore",
+    "gitignore",
+    "graphql",
+    "maxsize",
+    "nginx",
+    "npmrc",
+    "pgsql",
+    "postgresql",
+    "prettierrc",
+    "printf",
+    "pubsub",
+    "rediscommander",
+    "serialize",
+    "serializer",
+    "serializers",
+    "superadmin",
+    "tinymce",
+    "unopinionated"
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}
